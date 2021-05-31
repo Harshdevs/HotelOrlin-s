@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="./register.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+	<div class="container"><br>
+
+		<div class="col-lg-6 m-auto d-block">
+
+			<form action="./login.html" onsubmit="return validation()">
+				<h1 class="text-center">REGISTER</h1>
+				<div class="form-group">
+					<label for="user" class="font-weight-bold"> Username: </label>
+					<input type="text" name="user" class="form-control" id="user" placeholder="Enter your name"
+						autocomplete="off">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Email: </label>
+					<input type="text" name="email" class="form-control" id="emails" placeholder="Enter your mail"
+						autocomplete="off">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Contact Number: </label>
+					<input type="text" name="mobile" class="form-control" id="mobileNumber"
+						placeholder="Enter your contact number" autocomplete="off">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold">Gender:</label>
+					<select class="form-control" id="gender">
+						<option value="0" selected disabled></option>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Others</option>
+					</select>
+					<span id="genders" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Password: </label>
+					<input type="text" name="pass" class="form-control" id="pass" placeholder="Enter new password"
+						autocomplete="off">
+					<span id="passwords" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Confirm Password: </label>
+					<input type="text" name="conpass" class="form-control" id="conpass" placeholder=" Confirm password"
+						autocomplete="off">
+					<span id="confrmpass" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<input type="submit" name="submit" value="submit" class="btn btn-primary" autocomplete="off">
+
+			</form>
+
+		</div>
+	</div>
+
+	<script src="./login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import
+url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    
+    
+}html{
+
+    background-color:black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.body{
+    
+    max-width: width auto;
+  margin:auto;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family:'Poppins',sans-serif;
+}
+.cont {
+    padding: 0 0 0 5px;
+    width: 100%;
+    height: auto;
+}
+.heading{
+    width:1730px;
+    height:70px;
+    background-color:black;
+    display: inline-flex;
+}
+
+
+.hotelname{
+    display: flex;
+    color: white;
+    float: left;
+    
+    text-align: center;
+
+    text-decoration: underline;
+    padding-bottom: 50px;
+    font-size: 48px;
+    font-style: italic;
+
+}/*
+.roomheading1{
+    float: right;
+    padding-right: 25%;
+    bottom: 30px;
+    color:white;
+    font-size: 35px;
+    font-family:'sans-serif';
+}*/
+.roomheading1{
+    
+    text-align:center;
+    color: white;
+    
+    font-size:30px;
+    font-style: italic;
+    
+}
+.leftside{
+    /*background-color:cadetblue;*/
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("images1/b1.jpg");
+    background-size: cover;
+    padding-left: 10px;
+    left:5px;
+    float: left;
+    font-family:cursive;
+    font-size: 25px;
+    width: 500px;
+    height: 620px;
+    color:#fffff5;
+   
+
+}
+
+#slider{
+    left:500px;
+    background-color:rgba(21, 180, 159, 0.753);
+    position: relative;
+    width:1330px;
+    height:620px;
+    padding:4px solid grey;
+
+
+}
+.card{
+    position: relative;
+ border:2px solid black;
+    float: left;
+    height:600px;
+    width: 570px;
+}
+.slide{
+    left:30px;
+    top:20px;
+    position: absolute;
+    width:1200px;
+    height:800px;
+    display:none;
+}
+.card.slide{
+    display:inline-block;
+}
+.slide.active{
+    display:block;
+}
+.r3{
+    background-image: url("images1/relaxing\ room.jpg");
+    background-size: cover;
+}
+.r4{
+    background-image: url("images1/classic\ room.jpeg");
+    background-size: cover;
+}
+.r1{
+    background-image: url("images1/junior\ suite.jpg");
+    background-size: cover;
+}
+.r2{
+    background-image: url("images1/grand\ suite.jpg ");
+    background-size: cover;
+
+}
+.r5{
+    background-image: url("images1/sea\ view.jpeg");
+    background-size: cover;
+}
+.r6{
+    background-image: url("images1/terrace\ 1.jpeg");
+    background-size: cover;
+}
+#left-arrow{
+    position: absolute;
+    left:540px;
+    top:40%;
+    background-color:gray;
+    cursor: pointer;
+    font-size: 68px;
+    color: #ffffff;
+    border: none;
+    opacity: 0.3;
+}
+
+#left-arrow:hover{
+    color:goldenrod;
+}
+#right-arrow:hover{
+    color:goldenrod;
+}
+#right-arrow{
+    right: 22px;
+    padding:0;
+    position: absolute;
+    top:40%;
+    background-color:gray;
+    cursor: pointer;
+    font-size: 68px;
+    color: #ffffff;
+    opacity: 0.3;
+
+   
+
+}
+.overlay{
+    position:absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color:black;
+    
+}
+.card:hover .overlayleft{
+    opacity:0.8;
+    transition: 1s;
+    
+}
+.text{
+    color:black;
+    font-family: sans-serif;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:30px;
+}
+.imontext{
+    color:black;
+    font-family:'Tangerine'cursive,serif;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:30px;
+
+}
+.overlayleft{
+    height:100%;
+    width:0;
+    top:0;
+    left:0;
+   /* background-color:grey*/
+   background: linear-gradient(to right,#ffffff, #8cffba, #666666);
+}
+.card:hover .overlayleft{
+    width:100%;
+
+}
+#bookbutton{
+    text-decoration: none;
+    padding:10px;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+#num{
+    font-size:70px;
+}
+footer {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    background-color: teal;
+   /* background-image: url(./images/I/rsz_11b1.jpg);*/
+    background-size: cover;
+    
+
+    border-spacing:0;
+    height: 120px;
+    width: 1730px;
+  }
+  /*social media icons*/
+
+.copyright {
+    color:white;
+    font-size: 22px;
+    position: relative;
+    top:30px;
+    right:420px;
+    text-decoration: underline;
+    
+
+  }
+  
+
+.soc {
+    width:80px;
+    height: 65px;
+  }
+  
+  .soc ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .soc ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .soc ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+  }
+  
+  .soc ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .soc ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  .soc ul li a:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+  }
+  
+  /*social media icons ends*/
+ 
