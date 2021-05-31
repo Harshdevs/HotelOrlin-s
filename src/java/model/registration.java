@@ -562,8 +562,8 @@ public class registration {
     }
     
     public void SendBookMail(String msg, String subject, String email) {
-        String from = "orlin.admn@gmail.com";
-        String password = "olin@admin0";
+        String from = "";
+        String password = "";
         String to = email;
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
