@@ -22,7 +22,7 @@ public class registration {
         try {
 
             Class.forName("com.mysql.jdbc.Driver"); // load the drivers
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/orlins", "root", "root");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/orlins", "", "");  //add username and password of mqsql
             // connection with data base
             se = session;
         } catch (Exception e) {
