@@ -1,0 +1,76 @@
+TABLE 1
+
+DROP TABLE IF EXISTS `orlins`.`bookings`;
+CREATE TABLE  `orlins`.`bookings` (
+  `b_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `b_name` varchar(100) DEFAULT NULL,
+  `b_img` varchar(45) DEFAULT NULL,
+  `b_cost` int(10) unsigned DEFAULT NULL,
+  `uname` varchar(200) DEFAULT NULL,
+  `arrival` date DEFAULT NULL,
+  `guests` int(10) DEFAULT NULL,
+  `stay` int(10) DEFAULT NULL,
+  `uid` int(10) unsigned DEFAULT NULL,
+  `uemail` varchar(50) DEFAULT NULL,
+  `status` varchar(45) NOT NULL,
+  PRIMARY KEY (`b_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+
+
+
+
+
+TABLE 2
+
+DROP TABLE IF EXISTS `orlins`.`passwordtrack`;
+CREATE TABLE  `orlins`.`passwordtrack` (
+  `slno` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`slno`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+
+
+
+
+
+TABLE 3
+
+DROP TABLE IF EXISTS `orlins`.`rooms`;
+CREATE TABLE  `orlins`.`rooms` (
+  `r_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `r_name` varchar(100) DEFAULT NULL,
+  `r_img1` varchar(45) DEFAULT NULL,
+  `r_img2` varchar(45) DEFAULT NULL,
+  `r_img3` varchar(45) DEFAULT NULL,
+  `r_img4` varchar(45) DEFAULT NULL,
+  `r_img5` varchar(45) DEFAULT NULL,
+  `r_cost` int(10) unsigned DEFAULT NULL,
+  `r_desc` varchar(1000) DEFAULT NULL,
+  `r_serv` varchar(500) DEFAULT NULL,
+  `r_type` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`r_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+
+
+
+TABLE 4
+
+DROP TABLE IF EXISTS `orlins`.`users`;
+CREATE TABLE  `orlins`.`users` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(25) NOT NULL DEFAULT 'User',
+  `phone` varchar(10) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `date` datetime DEFAULT NULL,
+  `pswd` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `phone` (`phone`,`email`,`pswd`),
+  KEY `u_name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
